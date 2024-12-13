@@ -1,8 +1,44 @@
+:root {
+    --color: white;
+    --background-color: rgba(32, 32, 32, 1);
+    --banner-tint: rgba(255, 255, 255, 0.0625);
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --color: black;
+        --background-color: rgba(255, 255, 255, 1);
+    }
+}
+
 .title-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-radius: 30px;
+    background-image: url(banners/adwaita-d.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.title-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--banner-tint);
+    border-radius: inherit;
+    z-index: 1;
+}
+
+.title-container > * {
+    position: relative;
+    z-index: 2;
 }
 
 .title {
@@ -13,6 +49,7 @@
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
+    user-select: none;
 }
 
 .part {
@@ -24,6 +61,7 @@
     font-weight: 800;
     font-style: normal;
     transform: translateY(-32px);
+    user-select: none;
 }
 
 .content-container {
@@ -38,13 +76,8 @@
     max-width: 50rem;
 }
 
-* {
-    background-color: transparent;
-    color: white;
-}
-
 body {
-    background-color: rgb(32, 32, 32);
+    background-color: var(--background-color);
     padding: 2rem;
 }
 
@@ -54,12 +87,25 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-    color: white;
+h6,
+ul,
+ol,
+li {
+    color: var(--color);
 }
 
 hr {
     border: none;
     height: 1px;
     background-color: rgb(96, 96, 96);
+}
+
+a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0087e8;
 }
