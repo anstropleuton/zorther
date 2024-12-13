@@ -2,6 +2,7 @@
     --color: white;
     --background-color: rgba(32, 32, 32, 1);
     --banner-tint: rgba(255, 255, 255, 0.0625);
+    --part-title-offset-y: -32px;
 }
 
 @media (prefers-color-scheme: light) {
@@ -43,6 +44,7 @@
 
 .title {
     padding-top: 50px;
+    line-height: 0px;
     font-size: 100px;
     color: white;
     font-family: "Exo", sans-serif;
@@ -53,14 +55,15 @@
 }
 
 .part {
-    padding-bottom: 50px;
+    padding-bottom: calc(50px + var(--part-title-offset-y));
+    line-height: 0px;
     font-size: 28px;
     color: white;
     font-family: "Exo", sans-serif;
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
-    transform: translateY(-32px);
+    transform: translateY(var(--part-title-offset-y));
     user-select: none;
 }
 
