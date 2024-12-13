@@ -1,0 +1,48 @@
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    padding-top: 50px;
+    font-size: 100px;
+    line-height: 60px;
+    color: white;
+    font-family: "Gilroy-ExtraBold";
+}
+
+.part {
+    padding-bottom: 50px;
+    line-height: 0px;
+    font-size: 28px;
+    color: white;
+    font-family: "Gilroy-Regular";
+}
+
+* {
+    background-color: transparent;
+    color: white;
+}
+
+body {
+    background-color: rgb(32, 32, 32);
+    padding: 2rem;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: white;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: rgb(96, 96, 96);
+}
