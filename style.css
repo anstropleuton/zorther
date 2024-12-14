@@ -3,12 +3,33 @@
     --background-color: rgba(32, 32, 32, 1);
     --banner-tint: rgba(255, 255, 255, 0.0625);
     --part-title-offset-y: -32px;
+    --title-font-size: 100px;
+    --part-font-size: 28px;
+    --title-padding: 50px;
 }
 
 @media (prefers-color-scheme: light) {
     :root {
         --color: black;
         --background-color: rgba(255, 255, 255, 1);
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --part-title-offset-y: -24px;
+        --title-font-size: 75px;
+        --part-font-size: 21px;
+        --title-padding: 37.5px;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --part-title-offset-y: -16px;
+        --title-font-size: 50px;
+        --part-font-size: 14px;
+        --title-padding: 25px;
     }
 }
 
@@ -43,9 +64,9 @@
 }
 
 .title {
-    padding-top: 50px;
+    padding-top: var(--title-padding);
     line-height: 0px;
-    font-size: 100px;
+    font-size: var(--title-font-size);
     color: white;
     font-family: "Exo", sans-serif;
     font-optical-sizing: auto;
@@ -55,9 +76,9 @@
 }
 
 .part {
-    padding-bottom: calc(50px + var(--part-title-offset-y));
+    padding-bottom: calc(var(--title-padding) + var(--part-title-offset-y));
     line-height: 0px;
-    font-size: 28px;
+    font-size: var(--part-font-size);
     color: white;
     font-family: "Exo", sans-serif;
     font-optical-sizing: auto;
