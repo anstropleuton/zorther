@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script defer src="scroll-to-top.js"></script>
 </head>
 
 <body>
@@ -19,7 +20,10 @@
                 <h2 class="subtitle">Part 1: Beneath the Layers</h2>
             </div>
 
-            <button onclick="window.location.href = 'index.html'" style="margin-bottom: var(--banner-margin);">Go to index</button>
+            <div class="nav-buttons">
+                <button onclick="window.location.href = 'index.html'" style="margin-bottom: var(--banner-margin);">Index</button>
+                <button onclick="window.location.href = 'part-2.html'" style="margin-bottom: var(--banner-margin);">Part 2</button>
+            </div>
             <h3>Prologue: The Planet</h3>
             <p>On the distant and idyllic planet of Zorther, life was a perfect harmony between nature and technology. The sky shimmered with a vibrant sapphire hue, unmarred by pollution, as sunlight poured through clean, crystal-clear air. Rolling plains of emerald grass stretched endlessly, punctuated by towering, ancient trees with silver leaves that glittered like stars. Rivers of turquoise water carved gentle pathways through the land, their currents soft and melodic, like whispers from the planet itself. These rivers were not just beautiful—they were lifelines, infused with natural minerals that sustained both flora and fauna. Zorther’s wildlife was gentle and diverse, with glowing insects, birds that sang harmonies, and animals whose fur shimmered faintly under moonlight.</p>
             <p>Yet, It’s inhabitance, the Zorthians, lived in a remarkable society with highly advanced technology. Amidst this natural paradise, Zorthian cities rose as symbols of innovation. Majestic skyscrapers—smooth, white, and curving like works of art—pierced the horizon, their surfaces glowing faintly under the twin moons. Elevated platforms and sky bridges connected districts, seamlessly blending urban life with suspended gardens that cascaded flowers and waterfalls. Below, sleek metallic highways snaked through the landscape, their shimmering surfaces seeming untouched by time or dust.</p>
@@ -45,10 +49,22 @@
             <p>As Vekroth was dragged away, he locked eyes with Rinn in the crowd. The boy stood still, torn between pity and anger.</p>
             <hr />
             <h3>Chapter 2: A Family on the Surface</h3>
-            <p>Among Zorther’s surface-dwellers lived the Eryssian family, whose youngest member, fifteen-year-old Lirien Eryss, had participated in the ill-fated Zephyride trial. Unlike the others, Lirien had managed to partially control the device, though she too abandoned it before any harm could befall her. Weeks later, Lirien sat on the study desk in her room, replaying the events of the demonstration in her mind. “What was that thing really doing?” she wondered.</p>
-            <p>Months later, her curiosity reignited when her elder brothers, Toris and Valtor, stumbled upon an abandoned Zephyride hidden in a neglected storage facility, which was yet to be sent to the Depths. “I think we should take it to Lirien,” Toris said, wiping dust off the device. They sent it to her.</p>
-            <p>Intrigued, Lirien began to study the device in secret, discovering troubling modifications within its design. “This isn’t just for comfort,” she muttered under her breath as she examined the hidden programming. “It’s designed for control… maybe even enslavement.” Alarmed yet determined to uncover the truth, Lirien delved deeper, unaware of how closely her fate was tied to the imprisoned scientist who had created it.</p>
-            <p>Over time, Toris and Valtor also befriended Rinn, who had distanced himself from the chaos surrounding Vekroth’s arrest. One evening, Rinn hesitantly showed Toris glimpses of Vekroth’s earlier work—projects that hinted at deeper conspiracies.</p>
+            <p>Among Zorther’s surface-dwellers lived the Eryssian family, nestled in a serene neighborhood on the edge of the crystalline lakes. Their home, a blend of organic and geometric design, stood against the backdrop of emerald grasslands and towering trees. Light filtered through the delicate canopy, creating a warm, dappled glow across their living space. The scent of blooming white flowers permeated the air, giving everything a peaceful, idyllic quality that most of the surface-dwellers took for granted. Yet for Lirien Eryss, the tranquility of her surroundings often felt like an illusion—a barrier preventing her from seeing the truth that lay beneath.</p>
+            <p>Lirien, at fifteen, was still growing into herself, but she had always been drawn to things that others considered unsettling or dangerous. Her room was a testament to her inquisitive mind—piles of discarded technical manuals, holographic displays flickering with snippets of data, and sketches of strange devices filled the space. But today, she sat at her desk, her fingers hovering above a small device she had never truly understood—the Zephyride.</p>
+            <p>The events of the demonstration still haunted her thoughts. She could still hear the screams of the testers, feel the shock of the device slipping out of her control. She had managed to regain some control before it was too late, but that had not stopped the sensation of her body being overtaken by something… unnatural. A shiver ran down her spine as she replayed the chaos in her mind.</p>
+            <p>“What was that thing really doing?” Lirien muttered to herself, glancing at her reflection in the shimmering surface of a nearby holographic monitor. The more she thought about it, the less sense it made. The Zephyride was supposed to be a marvel of convenience, not an instrument of terror. But the way it had twisted her body, as if she were nothing more than a puppet to its will, couldn’t be ignored.</p>
+            <p>As she pondered, a soft knock on her door interrupted her thoughts. Her older brothers, Toris and Valtor, both in their early twenties, entered without waiting for an invitation. Toris, the more energetic of the two, had a habit of invading spaces without permission, his exuberant curiosity always getting the better of him. Valtor, on the other hand, was quieter and more reserved, yet his sharp eyes missed nothing. Between them, they made a formidable pair—Toris pushing forward with bold ideas and Valtor keeping a careful watch on the details.</p>
+            <p>"We found something you might want to see," Toris said, holding up a small device wrapped in a cloth. "In an old storage facility on the outskirts of the city. Looks like another Zephyride prototype."</p>
+            <p>Lirien’s heart skipped a beat. "You did what?" she asked, her voice catching with a mix of surprise and concern.</p>
+            <p>"We figured you'd want to take a look," Valtor added calmly, his voice steady but carrying a weight of unspoken caution. “It’s hidden away. Didn’t look like it had ever been used.”</p>
+            <p>Lirien stood from her desk, her curiosity immediately piqued. She moved quickly, pulling the cloth away from the device. The Zephyride in her hands was slightly different from the one used in the demonstration, but the sleek, elegant form was unmistakable. “Why was it abandoned?” she muttered, her fingers gently tracing the smooth surface. It seemed untouched, yet something about it felt… wrong. There was a hidden potential here, she could feel it in her bones.</p>
+            <p>“I don’t know,” Toris said, sitting down across from her. "But we thought you might be able to figure it out. You know more about this stuff than we do."</p>
+            <p>Lirien set the device down on the desk. As she examined it, she felt a growing unease. There was something faintly sinister about the way it hummed—almost as though it were alive. Her fingers brushed over the surface, activating a set of holographic panels that began to shimmer in the air. As the interface came to life, her eyes narrowed in concentration.</p>
+            <p>“This isn’t just a tool for convenience,” Lirien whispered to herself, her voice barely audible. “There’s something… off about it.”</p>
+            <p>She zoomed in on the hidden programming, her mind racing as she deciphered the code. The deeper she dug, the more unsettling it became. The device was designed not for ease of use, but for control—mind control. “It’s designed for enslavement,” she muttered, her breath catching. It was clear now: the Zephyride was not a marvel of technology, but a tool of domination. "The creators were playing with forces they didn’t fully understand."</p>
+            <p>Her hands shook slightly as she continued to analyze the device. The implications of what she was discovering were staggering. She could feel the weight of the secrets pressing down on her. What had she gotten herself into?</p>
+            <p>Toris and Valtor exchanged a glance, sensing her growing concern. “What do you think it’s for?” Toris asked.</p>
+            <p>Lirien pulled back, her mind racing. “I don’t know yet. But I need to know more.”</p>
             <hr />
             <h3>Chapter 3: Earth’s Forgotten Layers</h3>
             <p>Centuries ago, Zorthians had invented cosmic travel technology. This allowed them to visit planets with ease. They had invented starships to travel anywhere in space, and vast-distance transporters named Hypergate that allowed them to travel between two fixed points on planets.</p>
@@ -73,12 +89,13 @@
             <p>The fates of Lirien and Kael were now set on a collision course. Their shared curiosity, once personal, had become a thread that bound them to the same mystery, spanning across two planets. The more they uncovered, the more they realized that their paths were not just parallel—they were destined to intersect. The legacy of Zorthian technology, the schemes of Dr. Vekroth, and the buried truths connecting Earth and Zorther were closing in on them. Together, they would have to face the dangers lurking beneath the surface.</p>
             <p>And as they ventured deeper into the unknown, they would come to understand that the secrets buried beneath their worlds were not just fragments of history—they were the keys to their futures. The question was: Would they be able to unlock them in time, or would the truth tear their worlds apart?</p>
             <p>Their worlds were only beginning to converge, with secrets buried deeper than they could fathom and dangers lurking just beyond their reach. What lay beneath the layers was more than history—it was the future of two civilizations.</p>
-            <p><em>To be continued…</em></p>
+            <p><em>To be continued…</em> <a href="part-2.html">continue?</a></p>
+            <div class="copyright-card" style="margin-top: 30px;">
+                <p>Copyright &copy; 2024 Anstro Pleuton. All rights reserved.</p>
+            </div>
         </div>
     </div>
-    <div class="bottom-bar">
-        <p>Copyright &copy; 2024 Anstro Pleuton. All rights reserved.</p>
-    </div>
+    <button id="scroll-to-top">↑</button>
 </body>
 
 </html>

@@ -148,17 +148,14 @@ button:active {
     padding: 2rem;
 }
 
-/* Bottom Bar Styles */
-.bottom-bar {
-    left: 0;
-    bottom: 0;
-    width: 100%;
-
+/* Copyright Card Style */
+.copyright-card {
     display: flex;
     align-items: center;
     justify-content: center;
 
     background-color: var(--button-background-color);
+    border-radius: 10px;
 }
 
 /* Banner Styles */
@@ -220,4 +217,19 @@ button:active {
     color: white;
 
     transform: translateY(var(--subtitle-title-offset-y));
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+#scroll-to-top {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: none;
 }
